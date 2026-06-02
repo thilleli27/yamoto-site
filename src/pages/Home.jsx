@@ -3,6 +3,7 @@
 
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import Yamoto from "../components/Yamoto";
 import "../styles/global.css";
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
     <div>
       <Navbar />
       <Hero />
+      <Yamoto />
     </div>
   );
 }

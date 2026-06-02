@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&family=Inter:wght@400;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +24,7 @@ body {
   --blanc: #FFFFFF;
   --font-nav: 'Inter', sans-serif;
   --font-titre: 'Montserrat', sans-serif;
+  --font-anton: 'Anton', sans-serif;
 }
 html {
   overflow-x: hidden;
