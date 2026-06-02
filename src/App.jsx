@@ -1,24 +1,20 @@
-// Fichier principal de l'application
-// Gère le routing entre les différentes pages
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Admin from "./pages/Admin";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-
-        {/* Page principale du site (one page) */}
-        <Route path="/" element={<div>Site en construction</div>} />
+        {/* Page principale du site one page */}
+        <Route path="/" element={<Home />} />
 
         {/* Page de connexion admin */}
         <Route path="/login" element={<Login />} />
 
-        {/* Page admin — protégée ! */}
-        {/* Si pas connecté → redirige vers /login automatiquement */}
+        {/* Page admin protégée */}
         <Route
           path="/admin"
           element={
@@ -27,7 +23,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,20 @@
+/* CSS global du site */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Variables de couleurs */
+:root {
+  --rouge: #C60000;
+  --noir: #000000;
+  --blanc: #FFFFFF;
+}
