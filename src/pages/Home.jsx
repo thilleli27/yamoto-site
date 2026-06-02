@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import Yamoto from "../components/Yamoto";
 import Tracklist from "../components/Tracklist";
 import Makala from "../components/Makala";
+import Tournee from "../components/Tournee";
 import "../styles/global.css";
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
       <Yamoto />
       <Tracklist />
       <Makala />
+      <Tournee />
     </div>
   );
 }
