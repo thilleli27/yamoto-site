@@ -7,6 +7,7 @@ import Yamoto from "../components/Yamoto";
 import Tracklist from "../components/Tracklist";
 import Makala from "../components/Makala";
 import Tournee from "../components/Tournee";
+import Plateformes from "../components/Plateformes";
 import "../styles/global.css";
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
       <Tracklist />
       <Makala />
       <Tournee />
+      <Plateformes />
     </div>
   );
 }
