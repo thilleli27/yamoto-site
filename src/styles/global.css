@@ -1,4 +1,4 @@
-/* CSS global du site */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -6,15 +6,25 @@
   box-sizing: border-box;
 }
 
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 body {
   background-color: #000000;
   color: #ffffff;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
-/* Variables de couleurs */
 :root {
   --rouge: #C60000;
   --noir: #000000;
   --blanc: #FFFFFF;
+  --font-nav: 'Inter', sans-serif;
+  --font-titre: 'Montserrat', sans-serif;
+}
+html {
+  overflow-x: hidden;
 }

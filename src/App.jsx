@@ -9,8 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* Page principale du site one page */}
-        <Route path="/" element={<Home />} />
-
+            <Route path="/" element={<Home />} /> 
         {/* Page de connexion admin */}
         <Route path="/login" element={<Login />} />
 
