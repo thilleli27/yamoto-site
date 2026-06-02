@@ -13,8 +13,8 @@ function Navbar() {
   });
 
   return (
-       <nav style={{
-      backgroundColor: 'var(--noir)',
+    <nav style={{
+      backgroundColor: 'transparent',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -24,7 +24,7 @@ function Navbar() {
       position: 'fixed',
       top: '50px',
       left: '50%',
-      transform: 'translateX(-50%)', // centre la navbar horizontalement
+      transform: 'translateX(-50%)',
       zIndex: 999,
     }}>
 

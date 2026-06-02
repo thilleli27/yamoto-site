@@ -4,6 +4,7 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Yamoto from "../components/Yamoto";
+import Tracklist from "../components/Tracklist";
 import "../styles/global.css";
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
       <Navbar />
       <Hero />
       <Yamoto />
+      <Tracklist />
     </div>
   );
 }
