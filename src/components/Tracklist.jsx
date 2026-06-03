@@ -1,19 +1,28 @@
+import { useState, useEffect } from "react";
 import "../styles/Tracklist.css";
 
 function Tracklist() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <section className="tracklist"
+    <section
+      className="tracklist"
       id="album"
       style={{
         width: '100%',
-        height: '861px',
+        height: isMobile ? '400px' : '861px',
         position: 'relative',
         overflow: 'hidden',
-         marginTop: '-80px', 
+        backgroundColor: '#C60000',
+        marginTop: '-80px',
       }}
     >
-
-      {/* Image de fond */}
       <img
         src="/images/tracklist_bg.png"
         alt="Tracklist YAMOTO"
@@ -25,19 +34,21 @@ function Tracklist() {
         }}
       />
 
-      {/* Titre TRACKLIST par dessus l'image */}
       <h1
         style={{
           position: 'absolute',
-          top: '150px',
-          left: '40px',
+          top: isMobile ? '10px' : '100px',
+          left: '20px',
           fontFamily: 'var(--font-anton)',
-          fontSize: '128px',
+          fontSize: isMobile ? '40px' : '128px',
           fontWeight: '400',
           color: 'var(--blanc)',
           lineHeight: '100%',
-          width: '485px',
+          width: 'auto',
           zIndex: 1,
+          whiteSpace: 'nowrap',
+                    marginBottom: '60px',
+
         }}
       >
         TRACKLIST

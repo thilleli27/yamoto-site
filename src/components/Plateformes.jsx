@@ -1,10 +1,11 @@
 // Section PLATEFORMES
 // Titre + logos Spotify, Deezer, Apple Music, YouTube Music
 // Chaque logo est cliquable et mène vers la page de Makala
+import "../styles/Plateformes.css";
 
 function Plateformes() {
   return (
-    <section
+    <section className="plateformes" 
       id="plateformes"
       style={{
         backgroundColor: 'var(--noir)',

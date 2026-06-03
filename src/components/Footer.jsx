@@ -1,9 +1,8 @@
-// Footer du site
-// Date + YAMOTO en outline + liens réseaux sociaux + mentions légales
+import "../styles/Footer.css";
 
 function Footer() {
   return (
-    <footer
+    <footer className="footer"
       style={{
         backgroundColor: 'var(--noir)',
         padding: '80px 0',
@@ -21,7 +20,7 @@ function Footer() {
         fontSize: '64px',
         fontWeight: '400',
         color: 'transparent',
-        WebkitTextStroke: '1px #FFFFFF', // texte en outline
+        WebkitTextStroke: '1px #FFFFFF',
         letterSpacing: '0%',
         marginBottom: '0px',
       }}>
@@ -34,17 +33,17 @@ function Footer() {
         fontSize: '320px',
         fontWeight: '1000',
         color: 'transparent',
-        WebkitTextStroke: '4px #ffff', // texte en outline
+        WebkitTextStroke: '4px #ffff',
         lineHeight: '100%',
         letterSpacing: '0%',
-        width: '1393px',
+        width: '100%',
         textAlign: 'center',
       }}>
         YAMOTO
       </h1>
 
       {/* Liens réseaux sociaux + mentions légales */}
-      <div style={{
+      <div className="footer-links" style={{
         display: 'flex',
         justifyContent: 'space-between',
         width: '100%',
@@ -53,12 +52,11 @@ function Footer() {
         alignItems: 'center',
       }}>
 
-       {/* Liens réseaux sociaux */}
-        <div style={{
+        {/* Liens réseaux sociaux */}
+        <div className="footer-social" style={{
           display: 'flex',
           gap: '40px',
         }}>
-
           <a href="https://www.instagram.com/makalaxtrm/?hl=fr"
             target="_blank"
             rel="noreferrer"
@@ -82,20 +80,15 @@ function Footer() {
             }}>
             Tiktok →
           </a>
-
-          
-
         </div>
 
         {/* Mentions légales */}
-        <div style={{
+        <div className="footer-legal" style={{
           display: 'flex',
           gap: '40px',
         }}>
-
           <p style={{
             color: 'var(--blanc)',
-            textDecoration: 'underline',
             fontSize: '24px',
             fontFamily: 'var(--font-nav)',
           }}>
@@ -104,13 +97,11 @@ function Footer() {
 
           <p style={{
             color: 'var(--blanc)',
-            textDecoration: 'underline',
             fontSize: '24px',
             fontFamily: 'var(--font-nav)',
           }}>
             {"Conditions d'utilisation"}
           </p>
-
         </div>
 
       </div>

@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .plateformes h2 {
+    font-size: 32px !important;
+  }
+
+  .plateformes img {
+    width: 200px !important;
+    height: auto !important;
+  }
+}

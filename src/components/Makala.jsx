@@ -1,9 +1,10 @@
 // Section MAKALA — biographie de l'artiste
 // Photo de fond noir/blanc + titre + texte à gauche
+import "../styles/Makala.css";
 
 function Makala() {
   return (
-    <section
+    <section className="makala" 
       id="makala"
       style={{
         width: '100%',
@@ -28,6 +29,7 @@ function Makala() {
           width: '60%',
           objectFit: 'cover',
           objectPosition: 'center',
+         
         }}
       />
 

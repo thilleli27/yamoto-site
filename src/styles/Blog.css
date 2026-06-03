@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .blog {
+    padding: 40px 20px 100px 20px !important;
+  }
+
+  .blog h1 {
+    font-size: 64px !important;
+        text-align: center !important;
+            width: 100% !important;
+
+
+  }
+
+  .blog p {
+    font-size: 16px !important;
+  }
+
+  .blog iframe {
+    width: 100% !important;
+    height: 220px !important;
+  }
+}

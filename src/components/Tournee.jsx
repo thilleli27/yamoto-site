@@ -5,6 +5,7 @@
 import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
+import "../styles/Tournee.css";
 
 function Tournee() {
   // Les 3 premières dates depuis Firebase
@@ -27,19 +28,19 @@ const firstThree = dates;
 const restDates = [];
 
   return (
-    <section id="tournee" style={{
+    <section  className="tournee" id="tournee" style={{
       backgroundColor: 'var(--noir)',
       padding: '80px 0',
     }}>
 
       {/* PARTIE PRINCIPALE — carré rouge + 3 dates */}
-      <div style={{
+      <div  className="tournee-main" style={{
         display: 'flex',
         alignItems: 'stretch',
       }}>
 
         {/* Carré rouge TOURNÉE */}
-        <div style={{
+        <div className="tournee-rouge" style={{
           width: '553px',
           minHeight: '453px',
           backgroundColor: 'var(--rouge)',
@@ -67,7 +68,7 @@ const restDates = [];
         </div>
 
         {/* 3 premières dates */}
-        <div style={{
+        <div className="tournee-dates" style={{
           display: 'flex',
           flex: 1,
           alignItems: 'center',
@@ -81,7 +82,7 @@ const restDates = [];
 
               {/* Trait rouge vertical entre les dates */}
               {index > 0 && (
-                <div style={{
+                <div  className="tournee-trait" style={{
                   width: '4px',
                   height: '353px',
                   backgroundColor: 'var(--rouge)',

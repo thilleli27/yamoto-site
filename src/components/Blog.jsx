@@ -1,9 +1,9 @@
 // Section ACTU — actualités et vidéo
 // Titre + texte + vidéo YouTube intégrée
-
+import "../styles/Blog.css"; 
 function Blog() {
   return (
-    <section
+    <section className="blog" 
       id="actu"
       style={{
         backgroundColor: 'var(--noir)',

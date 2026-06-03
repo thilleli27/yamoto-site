@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+  .tournee {
+    padding: 40px 0 !important;
+  }
+
+  .tournee-main {
+    flex-direction: column !important;
+  }
+
+  .tournee-rouge {
+    width: 100% !important;
+    min-height: auto !important;
+    padding: 40px 20px !important;
+  }
+
+  .tournee-rouge h1 {
+    font-size: 64px !important;
+    width: auto !important;
+  }
+
+  .tournee-dates {
+    flex-direction: column !important;
+    padding: 20px !important;
+  }
+}
+@media (max-width: 768px) {
+  .tournee-trait {
+    display: none !important;
+  }
+}

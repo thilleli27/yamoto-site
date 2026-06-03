@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+  .makala {
+    padding: 40px 20px !important;
+    position: relative !important;
+    min-height: 600px !important;
+  }
+
+  .makala h1 {
+    font-size: 64px !important;
+    width: auto !important;
+    position: relative !important;
+    zIndex: 2 !important;
+  }
+
+  .makala p {
+    font-size: 16px !important;
+    width: 100% !important;
+    position: relative !important;
+    zIndex: 2 !important;
+  }
+
+  .makala img {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    objectFit: cover !important;
+    opacity: 0.4 !important;
+  }
+}
