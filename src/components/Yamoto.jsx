@@ -1,9 +1,10 @@
 // Section YAMOTO — présentation de l'album
 // Contient le titre, les paragraphes de description et la pochette
+import "../styles/Yamoto.css";
 
 function Yamoto() {
   return (
-    <section
+    <section className="yamoto"
       id="yamoto"
       style={{
         backgroundColor: 'var(--noir)',
@@ -15,7 +16,7 @@ function Yamoto() {
     >
 
       {/* PARTIE GAUCHE — titre + texte */}
-      <div style={{
+      <div  className="yamoto-text" style={{
         paddingLeft: '43px',
       }}>
 
@@ -96,7 +97,7 @@ function Yamoto() {
       </div>
 
       {/* PARTIE DROITE — pochette album */}
-      <div style={{
+      <div  className="yamoto-image" style={{
         width: '1097px',
         height: '743px',
         flexShrink: 0,

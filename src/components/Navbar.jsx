@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/Navbar.css";
 
 function Navbar() {
   const [hovered, setHovered] = useState(null);
@@ -13,7 +14,7 @@ function Navbar() {
   });
 
   return (
-    <nav style={{
+    <nav className="navbar" style={{
       backgroundColor: 'transparent',
       display: 'flex',
       justifyContent: 'center',

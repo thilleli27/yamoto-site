@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/Hero.css";
 
 function Hero() {
   const [hovered, setHovered] = useState(false);
@@ -21,7 +22,7 @@ function Hero() {
   };
 
   return (
-    <section
+    <section className="hero"
       style={{
         backgroundColor: 'var(--noir)',
         minHeight: '100vh',
