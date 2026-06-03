@@ -22,10 +22,9 @@ function Tournee() {
     fetchDates();
   }, []);
 
-  // Les 3 premières dates
-  const firstThree = dates.slice(0, 3);
-  // Toutes les dates après les 3 premières
-  const restDates = dates.slice(3);
+
+const firstThree = dates;
+const restDates = [];
 
   return (
     <section id="tournee" style={{
@@ -63,21 +62,7 @@ function Tournee() {
             TOURNÉE
           </h1>
 
-          {/* Lien voir toutes les dates */}
-          <a
-            href="#toutes-les-dates"
-            onClick={() => setShowAll(true)}
-            style={{
-              color: 'var(--noir)',
-              fontSize: '24px',
-              fontFamily: 'var(--font-nav)',
-              fontWeight: '400',
-              textDecoration: 'underline',
-              cursor: 'pointer',
-            }}
-          >
-            Voir toutes les dates →
-          </a>
+          
 
         </div>
 

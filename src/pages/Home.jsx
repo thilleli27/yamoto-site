@@ -21,9 +21,9 @@ function Home() {
       <Tracklist />
       <Makala />
       <Tournee />
-      <Plateformes />
       <Blog />
       <Footer />
+      <Plateformes />
     </div>
   );
 }

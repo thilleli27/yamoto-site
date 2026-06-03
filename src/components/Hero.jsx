@@ -56,7 +56,9 @@ function Hero() {
       />
       <a
       
-        href="#"
+       href="https://www.fnac.com/a22443506/Makala-YAMOTO-CD-album"
+        target="_blank"
+        rel="noreferrer"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         style={{

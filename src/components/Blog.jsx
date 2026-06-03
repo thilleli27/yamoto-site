@@ -53,19 +53,6 @@ function Blog() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
-
-        {/* Titre de la vidéo */}
-        <p style={{
-          fontFamily: 'var(--font-anton)',
-          fontSize: '32px',
-          color: 'var(--blanc)',
-          marginTop: '24px',
-          textDecoration: 'underline',
-          letterSpacing: '2px',
-        }}>
-          HOTEL YOTSUYA - MAKALA
-        </p>
-
       </div>
 
     </section>

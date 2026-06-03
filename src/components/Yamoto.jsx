@@ -27,10 +27,10 @@ function Yamoto() {
           fontWeight: '400',
           color: 'var(--blanc)',
           lineHeight: '100%',
-          marginBottom: '40px',
-          textShadow: '0px 4px 4px #00000040',
+          marginBottom: '60px',
+          width: '394px',
         }}>
-          YAMOTO
+          YAMATO
         </h1>
 
         {/* Bloc de paragraphes */}
@@ -39,6 +39,7 @@ function Yamoto() {
           display: 'flex',
           flexDirection: 'column',
           gap: '24px',
+          marginLeft:' 1px'
         }}>
 
           {/* Paragraphe 1 */}
