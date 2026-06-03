@@ -7,7 +7,7 @@ function Blog() {
       id="actu"
       style={{
         backgroundColor: 'var(--noir)',
-        padding: '80px 40px',
+        padding: '80px 40px 200px 40px', // plus de padding en bas
       }}
     >
 
