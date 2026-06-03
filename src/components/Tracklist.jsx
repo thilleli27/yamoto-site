@@ -1,6 +1,8 @@
+import "../styles/Tracklist.css";
+
 function Tracklist() {
   return (
-    <section
+    <section className="tracklist"
       id="album"
       style={{
         width: '100%',

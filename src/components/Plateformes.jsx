@@ -13,8 +13,17 @@ function Plateformes() {
       }}
     >
 
-      {/* Titre */}
-
+  {/* Titre */}
+      <h2 style={{
+        fontFamily: 'var(--font-titre)',
+        fontSize: '48px',
+        fontWeight: '400',
+        color: 'var(--blanc)',
+        textDecoration: 'underline',
+        marginBottom: '60px',
+      }}>
+        Disponible sur toutes les plateformes
+      </h2>
       {/* Logos des plateformes */}
       <div style={{
         display: 'flex',

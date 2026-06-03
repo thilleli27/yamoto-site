@@ -35,7 +35,6 @@ function Yamoto() {
 
         {/* Bloc de paragraphes */}
         <div style={{
-          width: '669px',
           display: 'flex',
           flexDirection: 'column',
           gap: '24px',

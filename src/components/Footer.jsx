@@ -34,7 +34,7 @@ function Footer() {
         fontSize: '320px',
         fontWeight: '1000',
         color: 'transparent',
-        WebkitTextStroke: '4px #C60000', // texte en outline
+        WebkitTextStroke: '4px #ffff', // texte en outline
         lineHeight: '100%',
         letterSpacing: '0%',
         width: '1393px',
@@ -53,13 +53,38 @@ function Footer() {
         alignItems: 'center',
       }}>
 
-        {/* Liens réseaux sociaux */}
+       {/* Liens réseaux sociaux */}
         <div style={{
           display: 'flex',
           gap: '40px',
         }}>
 
-        
+          <a href="https://www.instagram.com/makalaxtrm/?hl=fr"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              color: 'var(--blanc)',
+              textDecoration: 'underline',
+              fontSize: '24px',
+              fontFamily: 'var(--font-nav)',
+            }}>
+            Instagram →
+          </a>
+
+          <a href="https://www.tiktok.com/@makala_xtrm"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              color: 'var(--blanc)',
+              textDecoration: 'underline',
+              fontSize: '24px',
+              fontFamily: 'var(--font-nav)',
+            }}>
+            Tiktok →
+          </a>
+
+          
+
         </div>
 
         {/* Mentions légales */}
@@ -67,6 +92,24 @@ function Footer() {
           display: 'flex',
           gap: '40px',
         }}>
+
+          <p style={{
+            color: 'var(--blanc)',
+            textDecoration: 'underline',
+            fontSize: '24px',
+            fontFamily: 'var(--font-nav)',
+          }}>
+            Mentions légales
+          </p>
+
+          <p style={{
+            color: 'var(--blanc)',
+            textDecoration: 'underline',
+            fontSize: '24px',
+            fontFamily: 'var(--font-nav)',
+          }}>
+            {"Conditions d'utilisation"}
+          </p>
 
         </div>
 

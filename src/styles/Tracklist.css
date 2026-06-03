@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  .tracklist {
+    height: 400px !important;
+  }
+
+  .tracklist h1 {
+    font-size: 64px !important;
+    top: 80px !important;
+  }
+}
+@media (max-width: 768px) {
+  .tracklist {
+    height: 300px !important;
+  }
+
+  .tracklist h1 {
+    font-size: 48px !important;
+    top: 50px !important;
+    left: 20px !important;
+  }
+}
