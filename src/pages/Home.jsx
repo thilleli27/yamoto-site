@@ -8,6 +8,7 @@ import Tracklist from "../components/Tracklist";
 import Makala from "../components/Makala";
 import Tournee from "../components/Tournee";
 import Plateformes from "../components/Plateformes";
+import Blog from "../components/Blog";
 import "../styles/global.css";
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
       <Makala />
       <Tournee />
       <Plateformes />
+      <Blog />
     </div>
   );
 }
