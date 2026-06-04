@@ -51,7 +51,6 @@ function Hero() {
         alt="Makala"
         style={{ 
           width: '654px',
-          height: '314px',
         }}
       />
       <a

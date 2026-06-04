@@ -29,11 +29,12 @@ function Makala() {
           width: '60%',
           objectFit: 'cover',
           objectPosition: 'center',
-         
+          opacity: 1,
+          zIndex: 0,
         }}
       />
-
       {/* Contenu texte à gauche */}
+      
       <div style={{
         position: 'relative',
         zIndex: 1,
