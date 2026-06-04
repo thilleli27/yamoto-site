@@ -35,16 +35,7 @@ function Hero() {
       }}
     >
 
-      <p style={{
-        color: 'var(--blanc)',
-        fontSize: '18px',
-        fontFamily: 'var(--font-titre)',
-        fontWeight: '400',
-        letterSpacing: '2px',
-        textAlign: 'center',
-      }}>
-        {"La flamme, celle qu'on ne peut pas éteindre."}
-      </p>
+     
 
       <img
         src="/images/logo-makala.png"

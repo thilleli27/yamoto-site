@@ -32,7 +32,7 @@ minHeight: 'auto',
           marginBottom: '60px',
           width: '394px',
         }}>
-          YAMATO
+          YAMOTO
         </h1>
 
         {/* Bloc de paragraphes */}

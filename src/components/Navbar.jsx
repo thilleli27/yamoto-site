@@ -26,7 +26,7 @@ function Navbar() {
       height: '80px',
       width: '584px',
       position: 'fixed',
-      top: '50px',
+      top: '10px',
       left: '50%',
       transform: 'translateX(-50%)',
       zIndex: 999,
