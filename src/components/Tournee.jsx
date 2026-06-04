@@ -1,6 +1,6 @@
 // Section TOURNÉE
-// Affiche les 3 premières dates depuis Firebase
-// Bouton "Voir toutes les dates" scrolle vers toutes les dates
+// Affiche toutes les dates depuis Firebase
+// Les dates sont formatées en JJ/MM/AAAA
 
 import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
@@ -8,12 +8,9 @@ import { db } from "../firebase";
 import "../styles/Tournee.css";
 
 function Tournee() {
-  // Les 3 premières dates depuis Firebase
   const [dates, setDates] = useState([]);
-  // Afficher toutes les dates ou pas
   const [showAll, setShowAll] = useState(false);
 
-  // Récupère les dates depuis Firebase au chargement
   useEffect(() => {
     const fetchDates = async () => {
       const snapshot = await getDocs(collection(db, "dates"));
@@ -23,18 +20,23 @@ function Tournee() {
     fetchDates();
   }, []);
 
+  const firstThree = dates;
+  const restDates = [];
 
-const firstThree = dates;
-const restDates = [];
+  // Convertit la date de YYYY-MM-DD en DD/MM/YYYY
+  const formatDate = (date) => {
+    const [year, month, day] = date.split('-');
+    return `${day}/${month}/${year}`;
+  };
 
   return (
-    <section  className="tournee" id="tournee" style={{
+    <section className="tournee" id="tournee" style={{
       backgroundColor: 'var(--noir)',
       padding: '80px 0',
     }}>
 
-      {/* PARTIE PRINCIPALE — carré rouge + 3 dates */}
-      <div  className="tournee-main" style={{
+      {/* PARTIE PRINCIPALE — carré rouge + dates */}
+      <div className="tournee-main" style={{
         display: 'flex',
         alignItems: 'stretch',
       }}>
@@ -44,7 +46,7 @@ const restDates = [];
           width: '553px',
           minHeight: '453px',
           backgroundColor: 'var(--rouge)',
-          padding: '140px 74px 60px 74px', // plus de padding en haut
+          padding: '140px 74px 60px 74px',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
@@ -63,11 +65,9 @@ const restDates = [];
             TOURNÉE
           </h1>
 
-          
-
         </div>
 
-        {/* 3 premières dates */}
+        {/* Toutes les dates */}
         <div className="tournee-dates" style={{
           display: 'flex',
           flex: 1,
@@ -82,7 +82,7 @@ const restDates = [];
 
               {/* Trait rouge vertical entre les dates */}
               {index > 0 && (
-                <div  className="tournee-trait" style={{
+                <div className="tournee-trait" style={{
                   width: '4px',
                   height: '353px',
                   backgroundColor: 'var(--rouge)',
@@ -96,7 +96,7 @@ const restDates = [];
                 flex: 1,
               }}>
 
-                {/* Date en rouge */}
+                {/* Date en rouge — format JJ/MM/AAAA */}
                 <p style={{
                   fontFamily: 'var(--font-nav)',
                   fontSize: '36px',
@@ -104,7 +104,7 @@ const restDates = [];
                   color: 'var(--rouge)',
                   marginBottom: '16px',
                 }}>
-                  {concert.date}
+                  {formatDate(concert.date)}
                 </p>
 
                 {/* Ville en blanc gras */}
@@ -128,13 +128,28 @@ const restDates = [];
                   {concert.lieu}
                 </p>
 
+                {/* Sold-out badge */}
+                {concert.soldout && (
+                  <span style={{
+                    backgroundColor: 'var(--rouge)',
+                    color: 'var(--blanc)',
+                    padding: '4px 12px',
+                    fontSize: '14px',
+                    borderRadius: '4px',
+                    marginTop: '8px',
+                    display: 'inline-block',
+                  }}>
+                    SOLD OUT
+                  </span>
+                )}
+
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* TOUTES LES DATES — visible seulement si showAll est true */}
+      {/* TOUTES LES DATES */}
       {showAll && restDates.length > 0 && (
         <div id="toutes-les-dates" style={{
           marginTop: '60px',
@@ -164,7 +179,7 @@ const restDates = [];
                 color: 'var(--rouge)',
                 width: '150px',
               }}>
-                {concert.date}
+                {formatDate(concert.date)}
               </p>
               <p style={{
                 fontFamily: 'var(--font-nav)',

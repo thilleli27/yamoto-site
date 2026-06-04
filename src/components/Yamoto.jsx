@@ -8,10 +8,12 @@ function Yamoto() {
       id="yamoto"
       style={{
         backgroundColor: 'var(--noir)',
-        minHeight: '1093px',
-        display: 'flex',
+minHeight: 'auto',
+         display: 'flex',
         alignItems: 'center',
         gap: '80px',
+                paddingBottom: '60px',
+
       }}
     >
 
@@ -37,14 +39,14 @@ function Yamoto() {
         <div style={{
           display: 'flex',
           flexDirection: 'column',
-          gap: '24px',
+          gap: '16px', // 
           marginLeft:' 1px'
         }}>
 
           {/* Paragraphe 1 */}
           <p style={{
             fontFamily: 'var(--font-nav)',
-            fontSize: '24px',
+            fontSize: '18px',
             fontWeight: '400',
             color: 'var(--blanc)',
             lineHeight: '140%',
@@ -57,7 +59,7 @@ function Yamoto() {
           {/* Paragraphe 2 */}
           <p style={{
             fontFamily: 'var(--font-nav)',
-            fontSize: '24px',
+             fontSize: '18px',
             fontWeight: '400',
             color: 'var(--blanc)',
             lineHeight: '140%',
@@ -70,7 +72,7 @@ function Yamoto() {
           {/* Paragraphe 3 */}
           <p style={{
             fontFamily: 'var(--font-nav)',
-            fontSize: '24px',
+            fontSize: '18px',
             fontWeight: '400',
             color: 'var(--blanc)',
             lineHeight: '140%',
@@ -83,7 +85,7 @@ function Yamoto() {
           {/* Paragraphe 4 */}
           <p style={{
             fontFamily: 'var(--font-nav)',
-            fontSize: '24px',
+            fontSize: '18px',
             fontWeight: '400',
             color: 'var(--blanc)',
             lineHeight: '140%',
