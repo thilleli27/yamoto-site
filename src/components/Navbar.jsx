@@ -15,7 +15,10 @@ function Navbar() {
 
   return (
     <nav className="navbar" style={{
-      backgroundColor: 'transparent',
+      backgroundColor: 'rgba(0, 0, 0, 0.2)',
+      backdropFilter: 'blur(5px)',
+      borderRadius: '50px',
+      border: '1px solid rgba(255, 255, 255, 0.1)',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -29,6 +32,21 @@ function Navbar() {
       zIndex: 999,
     }}>
 
+ <a href="#album"
+        style={linkStyle('album')}
+        onMouseEnter={() => setHovered('album')}
+        onMouseLeave={() => setHovered(null)}
+      >
+        Album
+      </a> 
+
+     <a href="#makala"
+        style={linkStyle('makala')}
+        onMouseEnter={() => setHovered('makala')}
+        onMouseLeave={() => setHovered(null)}
+      >
+        Makala
+      </a>
       <a href="#tournee"
         style={linkStyle('tournee')}
         onMouseEnter={() => setHovered('tournee')}
@@ -37,21 +55,9 @@ function Navbar() {
         Tournée
       </a>
 
-      <a href="#makala"
-        style={linkStyle('makala')}
-        onMouseEnter={() => setHovered('makala')}
-        onMouseLeave={() => setHovered(null)}
-      >
-        Makala
-      </a>
+      
 
-      <a href="#album"
-        style={linkStyle('album')}
-        onMouseEnter={() => setHovered('album')}
-        onMouseLeave={() => setHovered(null)}
-      >
-        Album
-      </a>
+     
 
     </nav>
   );

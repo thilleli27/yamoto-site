@@ -20,8 +20,10 @@ function Tournee() {
     fetchDates();
   }, []);
 
-  const firstThree = dates;
-  const restDates = [];
+// Les 3 premières dates affichées par défaut
+const firstThree = dates.slice(0, 3);
+// Le reste des dates cachées
+const restDates = dates.slice(3);
 
   // Convertit la date de YYYY-MM-DD en DD/MM/YYYY
   const formatDate = (date) => {
@@ -65,6 +67,21 @@ function Tournee() {
             TOURNÉE
           </h1>
 
+          {/* Bouton voir toutes les dates */}
+          <a
+            href="#toutes-les-dates"
+            onClick={() => setShowAll(true)}
+            style={{
+              color: 'var(--noir)',
+              fontSize: '24px',
+              fontFamily: 'var(--font-nav)',
+              fontWeight: '400',
+              textDecoration: 'underline',
+              cursor: 'pointer',
+            }}
+          >
+            Voir toutes les dates →
+          </a>
         </div>
 
         {/* Toutes les dates */}
@@ -150,7 +167,7 @@ function Tournee() {
       </div>
 
       {/* TOUTES LES DATES */}
-      {showAll && restDates.length > 0 && (
+      {showAll && (
         <div id="toutes-les-dates" style={{
           marginTop: '60px',
           paddingLeft: '74px',
@@ -164,7 +181,7 @@ function Tournee() {
             Toutes les dates
           </h2>
 
-          {restDates.map((concert) => (
+          {dates.map((concert) => (
             <div key={concert.id} style={{
               display: 'flex',
               alignItems: 'center',
